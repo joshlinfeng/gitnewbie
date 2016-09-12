@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>browserify</title>
+
+		<script>
+
+		document.cookie = "height=180";
+
+		</script>
+
+		<style>
+
+		.target {
+			width: 200px;
+			height: 200px;
+			background: yellow;
+		}
+
+		.target.click {
+			animation-name: change;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-fill-mode: backwards;
+			animation-play-state: paused;
+		}
+
+		@-webkit-keyframes change {
+			50% {
+				width: 250px;
+				height: 250px;
+				background-color: red;
+			}
+			100% {
+				width: 400px;
+			    height: 400px;
+			    background: black;
+			}
+		}
+
+		input[type="password"]::-webkit-input-placeholder {
+
+			color: red;
+			font-size: 20px;
+		}
+
+
+
+	
+
+		</style>
+	
+	</head>
+	<body>
+
+	result: <span id="result" style="color:red; font-weight: bold;"></span>
+
+	       <img src="1.jpg" alt="">
+			
+
+
+			<div class="target"></div>
+
+			
+
+			<input type="button" class="click_me" value="click me"/>
+
+			<input type="password" placeholder="XXXXXX">
+
+			<script src="dist/bundle.js"></script>
+
+
+
+	</body>
+</html>
